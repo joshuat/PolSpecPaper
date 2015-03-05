@@ -1,0 +1,8 @@
+#!/bin/sh
+
+pdflatex polspec.tex
+bibtex polspec
+makeglossaries polspec
+pdflatex polspec.tex
+pdflatex polspec.tex
+
