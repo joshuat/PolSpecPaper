@@ -1,0 +1,44 @@
+Comments on version of 07.08.2015
+
+1. Abstract - key points are:
+  a) Pol spec has been shown to offer high bandwidth locking to atomic reference, and linewidth narrowing, without requiring RF electronics
+  b) Pol spec based on birefringence, i.e. refractive index, hence bandwidth not inherently limited by spontaneous decay
+  c) We investigate the noise-limited bandwidth of pol spec frequency discrimination and find (?) 200 MHz, and demonstrate sub-kHz linewidth with conventional ECDLs, using two similar pol spec arrangements and beatnote
+
+2. Intro
+2nd para seems in wrong place.  Also number of desirable traits - should be 2nd para, then "current techniques" para, then PolSpec?
+
+
+3. Figure 1: show some polarisations?
+
+Lambda/2 on balanced polarimeter: this is not needed.  Convenient but not intrinsic to the concept.
+
+4. Not good to use "\Delta n" because you have \Deltra as detuning later.  Perhaps \delta_n would be better, or \Delta_n and use \delta for detuning later?
+
+Similarly for \Delta\alpha, \Delta\alpha_0.
+
+5. I don't think you are conveying the issues around changing refrac index very clearly.  Needs to be clear that Eq.(5) has nothing to do with steady-state OBEs; it assumes a given fixed \Delta\alpha_0 which can be *separately* calculated by solution of the OBEs (which you should/must then do!).  After Eq.(5) there should be a version in terms of the atomic density matrix which you then calculate.
+
+
+You say:
+
+On a timescale less than the lifetime of the exited state \Delta\alpha_0 can be treated as a constant as there is no time for changes to the populations of the
+atomic levels or their coherences. On these short timescales the error signal is still dispersive and, with high bandwidth feedback, can be used for high bandwidth frequency stabilisation.
+
+I think this is getting at the issue but needs to be clearer.
+
+"The atomic substate populations and coherences that define the density matrix \rho given by Eq.(6) evolve at rates limited by the spontaneous decay time.  Laser frequency noise can extend to much higher frequencies, and thus the polarization spectroscopy signal of Eq.(6) can provide feedback bandwidth not limited by the usual absorption (spontaneous decay) bandwidth of $\Gamma/2$ (3\,MHz in the case of Rb).  Equivalently, the useful frequency range of the PS error signal is many times broader than can be obtained from absorption-based atomic references, allowing stabilization to frequencies far from resonance.  <leads on to Fig.2>
+
+
+
+Fig.3: remove extraneous mirrors around het measurement.  Doesn't have to reflect real-world arrangement.  Also "mogbox" is not good, just have one box ("laser" or "ECDL").
+
+
+Results: beatnote is fine, but it would be good to talk about using PS in combination with ultracavity.  Show results taken with cavity (sitting on side of fringe).  Actually it would be very nice to show scans through the cavity, one with satabs and one with PS locking.  Very dramatic.
+
+Conclusion: minor note - "It is likely...": you should be able to calculate what could be achieved, given bandwidth and SNR of PS signal.
+
+Isolators: should be mentioned in figure caption (as in "Not shown: Faraday isolators on output of lasers").
+
+Cost: don't mention cost in scientific paper.  Complexity perhaps.
+
