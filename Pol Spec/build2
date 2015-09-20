@@ -1,8 +1,0 @@
-#!/bin/sh
-
-pdflatex polspec2.tex
-bibtex polspec2
-makeglossaries polspec2
-pdflatex polspec2.tex
-pdflatex polspec2.tex
-

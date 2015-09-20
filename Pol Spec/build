@@ -1,8 +1,10 @@
 #!/bin/sh
 
-pdflatex polspec.tex
-bibtex polspec
+# Compile Stuff.
+pdflatex -output-directory Jank polspec.tex
+bibtex Jank/polspec
 makeglossaries polspec
-pdflatex polspec.tex
-pdflatex polspec.tex
+pdflatex -output-directory Jank polspec.tex
+pdflatex -output-directory Jank polspec.tex
 
+mv Jank/polspec.pdf polspec.pdf
